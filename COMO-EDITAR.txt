@@ -1,0 +1,70 @@
+COMO EDITAR O SITE DA BELA BUQUÊS
+==================================
+
+1) TROCAR UMA FOTO
+   Não tem botão de edição: é só CLICAR EM CIMA DA FOTO que você quer
+   trocar e escolher o arquivo (no celular, toque na foto).
+   Também dá para:
+     - ARRASTAR a foto da pasta e soltar em cima da imagem;
+     - COPIAR E COLAR: botão direito numa imagem > "Copiar imagem",
+       depois passe o mouse em cima da foto do site e aperte Ctrl+V
+       (funciona com print: Windows + Shift + S, depois Ctrl+V).
+   Aceita qualquer formato de foto: JPG, PNG, WEBP, GIF, BMP, AVIF, SVG,
+   ICO, JFIF, HEIC/HEIF (iPhone) e TIFF. O site converte tudo para JPG
+   e reduz o tamanho sozinho.
+
+   ONDE ISSO FUNCIONA (os clientes nunca conseguem trocar fotos):
+     - No index.html aberto no seu computador: funciona direto.
+     - No site publicado: na primeira vez, abra o endereço com ?editar
+       no final (ex.: https://seu-usuario.github.io/belabuques/?editar).
+       Depois disso, naquele aparelho, é só clicar nas fotos.
+
+2) TEXTOS
+   Depois de trocar uma foto (ou abrindo com ?editar), aparece a barra de
+   edição embaixo. Aí é só clicar em qualquer texto com borda tracejada
+   rosa e digitar.
+
+   Fotos HEIC (iPhone) e TIFF precisam de internet para converter e podem
+   levar alguns segundos. Não funcionam: PDF, vídeo e foto RAW de câmera
+   profissional (CR2, NEF, DNG). Nesses casos, salve como JPG ou tire um print.
+
+3) SALVAR — JEITO MAIS FÁCIL (sem configurar nada)
+   a) Toque em "Baixar site". Baixa UM arquivo: index.html, com as fotos
+      já dentro dele. Não precisa da pasta img/.
+   b) No GitHub, abra o repositório do site > "Add file" > "Upload files".
+   c) Arraste esse index.html (ele substitui o antigo) e clique em
+      "Commit changes".
+   d) Em 1 a 2 minutos o site atualiza.
+
+   Importante: para editar de novo, edite pelo site publicado (ou pelo
+   index.html que você baixou por último), para não perder as fotos.
+
+4) SALVAR — JEITO AUTOMÁTICO (publica com um toque)
+   Clique em "Configurações" e preencha:
+   - Usuário do GitHub e Repositório (normalmente já vêm preenchidos)
+   - Branch: main
+   - Token de acesso. Para criar:
+       a) Entre em https://github.com/settings/personal-access-tokens/new
+       b) Em "Repository access", escolha "Only select repositories"
+          e marque o repositório do site
+       c) Em "Permissions" > "Contents", escolha "Read and write"
+       d) Clique em "Generate token", copie e cole no campo
+   Depois é só tocar em "Publicar no site". O token fica salvo só naquele
+   aparelho.
+
+5) SE PREFERIR ENVIAR AS FOTOS DIRETO PELO GITHUB
+   Coloque as fotos DENTRO da pasta img/ com estes nomes
+   (terminando em .jpg, .jpeg, .png, .webp ou .JPG):
+     banner             -> banner principal (topo)
+     kit-presente       -> Kit presente
+     rosas-ursinho      -> Rosas & ursinho
+     feliz-aniversario  -> Feliz Aniversário
+     borboletas-azuis   -> Borboletas azuis
+     rosas-brilho       -> Rosas com brilho
+     rosas-bombons      -> Rosas & bombons
+
+6) VER O SITE COMO UM CLIENTE VÊ
+   No seu computador (ou no aparelho onde você edita), clicar numa foto
+   serve para TROCAR a foto. Para testar a experiência do cliente
+   (foto abrindo ampliada, sem os avisos de troca de foto), abra o endereço com ?cliente
+   no final. Ex.: https://seu-usuario.github.io/belabuques/?cliente

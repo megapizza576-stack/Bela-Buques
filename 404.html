@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Página não encontrada | Bela Buquês</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;
+  background:linear-gradient(to bottom,#FCD3DC,#FFF0F5);color:#4A2A38;font-family:'Poppins',system-ui,sans-serif}
+main{max-width:460px;display:flex;flex-direction:column;align-items:center;gap:16px}
+h1{margin:0;font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:clamp(34px,8vw,48px);line-height:1.1;color:#5A1033}
+h1 em{color:#D81B60}
+p{margin:0;font-size:17px;color:#6B4555}
+a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;background:#D81B60;color:#fff;font-weight:600;text-decoration:none}
+a:hover{background:#AD1457}
+a:focus-visible{outline:3px solid #5A1033;outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Ops, essa página <em>murchou</em></h1>
+  <p>O endereço que você abriu não existe. Mas os nossos buquês de cetim continuam lindos — e esses não murcham nunca.</p>
+  <a id="home" href="./">Voltar para a Bela Buquês</a>
+</main>
+<script>
+// No GitHub Pages o site fica em usuario.github.io/nome-do-repositorio/ — o botão volta para lá
+(function () {
+  var a = document.getElementById('home'), parts = location.pathname.split('/').filter(Boolean);
+  if (/\.github\.io$/i.test(location.hostname) && parts.length && !/\.html?$/i.test(parts[0])) a.href = '/' + parts[0] + '/';
+  else a.href = '/';
+})();
+</script>
+</body>
+</html>
